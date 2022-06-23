@@ -14,4 +14,6 @@ Screenshot of the mockup
 
 Link to live site:-
 
--[Flip me !!](https://apprentice-cloud.github.io/flipcoin/)
+-[Flip me !!](https://flipcoin-dam.netlify.app/)
+
+
