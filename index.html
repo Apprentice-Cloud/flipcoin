@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Fascinate&family=Smooch&family=Londrina+Shadow&family=Josefin+Sans&family=Rubik+Moonrocks&family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
     <title>Flip Coin 🪙</title>
 </head>
 <body>
@@ -14,16 +22,16 @@
         <h2 class="main--title" id="winner"></h2>
         <p class="main--content">Hey player ! Play against the 1110011001</p>
         <label for="name"></label>
-        <input name="name" type="text" placeholder="Enter name ">
+        <input name="name" type="text" placeholder="Enter your name">
         <button onclick="getPlayer1()" class="btn btn--submit" type="submit">Submit name</button>
 
         <div class="game-part">
             <div class="players">
-            <h3 class="player" id="player1"></h3>
+            <h3 class="player" id="player1">Player 1</h3>
             <h3 class="player" id="player2">Computer</h3>
             </div>
             <h4 class="round" id="round">Round 1</h4>
-            <button onclick="flipCoin()" class="btn btn--flip">Flip Coin</button>
+            <button onclick="flipCoin()" class="btn btn--flip">Flip Coin🪙</button>
             <p class="outcome" id="outcome"></p>
             <p class="logic" id="logic"></p>
             <p class="round--winner" id="roundwinner"></p>

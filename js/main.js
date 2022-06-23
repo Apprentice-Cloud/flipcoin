@@ -79,8 +79,10 @@ level++
     let totalRounds = roundCountComputer + roundCountPlayer;
 
     if (totalRounds == 5 && roundCountPlayer > roundCountComputer){
+        winner.style.display = "block";
         winner.textContent = player1.textContent + " wins 🍾";
     }else if (totalRounds == 5 && roundCountPlayer < roundCountComputer){
+        winner.style.display = "block";
         winner.textContent = "You lost 🥴 .. Give it another try 💀";
     }else if(totalRounds > 5){
         winner.textContent = "";

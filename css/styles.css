@@ -1,0 +1,161 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --amatic: 'Amatic SC', cursive; /* player,computer*/
+    --josefin: 'Josefin Sans', sans-serif; /* major body */
+    --shadowintolight: 'Shadows Into Light', cursive; /* winner */
+    --rubik: 'Rubik Moonrocks', cursive; /* versus */
+
+    /* Colors */
+    --lightpink: #FFEEEE;
+    --bg_body: #FFF6EA;
+    --bg_container: #F7E9D7;
+    --darkbg: #EBD8C3;
+
+}
+
+body{
+    margin: 0;
+    font-family: var(--josefin);
+    background: var(--bg_body);
+}
+
+.title{
+    font-family: var(--amatic);
+    text-align: center;
+    font-size: 3rem;
+}
+
+.container{
+    padding: 2rem;
+    text-align: center;
+    width: 70%;
+    max-width: 550px;
+    margin: 3rem auto;
+    background: var(--bg_container);
+    border-radius: 5px;
+    box-shadow: -2px 3px 8px 1px #222;
+}
+
+.main--title {
+    font-family: var(--shadowintolight);
+    font-size: 2.3rem;
+    color: #748DA6;
+    display: none;
+  }
+
+  .main--content{
+    
+    /* font-size: 2rem; */
+  }
+
+  input{
+    width: 40%;
+    padding: .5rem;
+    letter-spacing: .1rem;
+    background: var(--bg_body);
+    border: 1px solid #222;
+  }
+
+  input:focus, input:hover{
+    outline: 0;
+    border: 2px solid #222;
+  }
+
+
+  .btn{
+    background: #51557E;
+    padding: .5rem 1rem;
+    border: none;
+    color: #FFFFFF;
+    transition: .2s ease-in;
+    border-radius: 3px;
+  }
+  .btn--flip{
+    letter-spacing: .1rem;
+  }
+
+  .btn:hover{
+    background: #748DA6;
+  }
+
+  .players{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: var(--amatic);
+    font-size: 1.8rem;
+    position: relative;
+    margin: 0;
+  }
+  .player{
+    margin: 1rem 0;
+    text-decoration: underline;
+
+  }
+
+  #player1::after{
+    content: "v";
+    position: absolute;
+    top: -.5rem;
+    padding-left: 2rem;
+    font-family: var(--rubik);
+    font-size: 5rem;
+    color: #51557E;
+  }
+
+  .round{
+    font-family: 'Londrina Shadow', cursive;
+    font-size: 2.5rem;
+    margin: 1rem 0;
+  }
+
+  .outcome{
+    font-family: 'Smooch', cursive;
+    font-size: 14px;
+    letter-spacing: .4rem;
+    color: #47B5FF;
+  }
+
+  .logic{
+    text-transform: capitalize;
+  }
+
+  .round--winner{
+    font-family: var(--rubik);
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    margin: .7rem;
+  }
+
+  .current--score{
+    font-family: 'Fascinate', cursive;
+    font-size: 1.5rem;
+    color: #354259;
+  }
+
+  @media (max-width: 649px) {
+    input{
+        width: 70%;
+        margin: .7rem auto;
+        display: block;
+      }
+
+      .players{
+        grid-template-columns: 1fr;
+      }
+
+      #player1::after{
+        top: 2rem;
+        right: 40%;
+      }
+
+      #player2{
+        margin-top: 2rem;
+      }
+
+
+  }
+  
+
